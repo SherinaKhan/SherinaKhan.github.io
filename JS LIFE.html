@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How Long Will You Live In America?</title>
+	<link href="JS Life.css" type="text/css" rel="stylesheet">
+	
+<body>
+<div id="main">
+<h1>Life Expectancy</h1>
+<p><img src="https://quenya101.files.wordpress.com/2012/07/map_usa11.png" alt="America" width="895" height="465pa" /></p>
+<p>Find out your life expectancy based off of your gender and year of birth</p>
+<p>We will also find out if you of the legal age</p>
+
+<script>
+
+var firstName=prompt ("Please enter your first name!");
+var lastName=prompt ("Enter your last name");
+var birthYear=prompt("Enter the year you were born");
+
+var age=(2018 - birthYear);
+function findAge(){
+  document.write("<b> You are " + (age) + " years old. </b>");
+}
+findAge();
+
+function voteAge(){
+  if (age > 18) {
+    document.write(" <b> You are the legal age in certain states! </b>");
+  }else {
+    document.write(" <b> You are not the legal age! </b>");
+  }
+}
+ voteAge();
+
+var sex=prompt("Are you a male or a female?");
+
+function lifeExpectancy(){
+  if (sex == "male"){
+    document.write(" <b> On average in America, you will die in the year " + (76 - (age) + 2018) + ". </b>");
+}else{
+    document.write(" <b> On average in America, you will die in the year " + (81 - (age) + 2018) + ". </b>");
+  }
+}
+lifeExpectancy();
+
+</script>
+</head>
+</body>
+</html>
