@@ -1,0 +1,142 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	float: left;
+	list-style: none;
+	width: 20%;
+	color: white;
+	background: black;
+	font-size: 16pt;
+	font-family: "Times New Roman";
+	text-align: center;
+}
+li:hover {
+	color: black;
+	background: white;
+}
+body {
+background: #551a8b;
+text-align: center;
+}
+#main {
+width: 1000px;
+height: 10370x;
+background: #00cadb;margin: 25px auto;
+border: dotted 2px #ff00ff;
+padding: 5px;
+}
+h1 {
+text-align: center;
+font-family: "Times New Roman";
+font-size: 26pt;
+font-style: italic;
+color: #551a8b;
+text-shadow: 2px 2px 2px #6300a5;
+margin: 5px auto;
+} 
+hr {
+height: 2px;
+color: #551a8b;
+}
+p {
+font-family: "Garamond";
+font-size: 13pt;
+text-align: left;
+text-indent: 48px;
+color: #660066;
+margin: 18px auto;
+}
+#History {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Enjoy {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Types {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Tips {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#h2 {
+	text-align: center;
+	font-family: "Times New Roman";
+	font-size: 26pt;
+	font-style: italic;
+	color: #551a8b;
+	text-shadow: 2px 2px 2px #6300a5;
+	margin: 5px auto;
+}
+#Dry {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Dry2 {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Oily {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Oily2 {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Combo {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Combo2 {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Sens{
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Sens2{
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+
+#Cruel {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#CruelProducts {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#Rep {
+	text-align: left;
+	font-size: 16pt;
+	text-decoration: underline;
+}
+#HomeEnd {
+	text-align: left;
+	font-size: 19pt;
+	font-style:BD Merced;
+	color:Black
+}
+
