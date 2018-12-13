@@ -4,7 +4,14 @@
 <title>Makeup101-Home</title>
 <meta name="viewport" content="width=device-width intial-scale=1">
 <link href="style.css" type="text/css" rel="stylesheet">
-
+<script>
+    function changeTitle() {
+       if (!document.getElementById) return;
+       var newtitle = document.changeform.newtitle.value;
+       var heading1 = document.getElementById("heading1");
+       heading1.firstChild.nodeValue=newtitle;
+    }
+    </script>
 </head>
 
 <body>
@@ -25,7 +32,7 @@
 	});
 </script>
 <div id="main">
-<h1>Learning About Makeup</h1>
+<h1 id="heading1">Learning About Makeup</h1>
 <p><img src="http://thecircular.org/wp-content/uploads/2013/04/Mac-cosmetics-into-the-groove.jpg" alt="Makeup1" width="895" height="465pa" /></p>
 <hr>
 Makeup is something that has been gaining popularity in today's world. Today I will briefly discuss the history of makeup and answer questions on makeup, including some tips on how to look your best with makeup!
@@ -164,24 +171,74 @@ Makeup is something that has been gaining popularity in today's world. Today I w
 <p>5)Use lukewarm water, nothing too hot or too cold. Also, avoid scrubbing, especially with bar soaps as those tend to have harsh ingreidients that will aggravate your sensitive skin</p>
 <p>6)Overall, treat your skin like a baby. Use not too many harsh products or hot water, read the ingredients on products, and try to use products that say on a label "for sensitive skin"</p>
 
+	  
 <p id="HomeEnd">
 <img src="https://res.cloudinary.com/teepublic/image/private/s--BMGom9kT--/t_Preview/b_rgb:ef4a81,c_limit,f_jpg,h_630,q_90,w_630/v1479429243/production/designs/830495_1.jpg" alt="Smile" style="float:right;width:600:px;height:100px;"> 
 <b>I hope these tips were helpful and some of your questions were answered. Feel free to browse the site to see some of the best products in a range of prices that are designed for you!</b></p>
-<p>Go to <a href="dryskin.html">Next Page</a></p>
+
+<h3>Moving Box</h3>
+<div id="B">
+<button type="B" name="L"
+onclick="pos (-1,0) ;">Left</button>
+<button type="B" name="R"
+onclick="pos (1,0) ;">Right</button>
+<button type="B" name="U"
+onclick=="pos (0,-1) ;">Up</button>
+<button type="B" name="D"
+onclick=="pos (0,1) ;">Down</button>
+<button type="B" name="Hide"
+onclick="hideSquare() ;">Hide</button>
+<button type="B" name="Display"
+onclick="showSquare();">Display</button>
+</div>
+<hr />
+<div id="square">
+You can move this box around using the buttons below.
+</div>
+
+<h5>Comment Section</h5>
+<form>
+<textarea id="words" rows="10" cols="20">Enter comment</textarea>
+<input type="button" onclick="getwords()" value="Enter" /> <br>
+<p id="para"></p>
+</form>
 
 <script>
-function goBack() {
-  window.history.back()
-}
-function goForward() {
-  window.history.forward()
+var x=1000, y=1000;
+function pos(dx,dy) {
+ if (!document.getElementById) return;
+ x += 30*dx;
+ y += 30*dy;
+ obj = document.getElementById("square");
+ obj.style.top=y + "px";
+ obj.style.left=x + "px";
+ }
+ function hideSquare(){
+ if (!document.getElementById) return;
+ obj = document.getElementById("square");
+ obj.style.display="none";
+ }
+ function showSquare(){
+ if (!document.getElementById) return;
+ obj = document.getElementById("square");
+ obj.style.display="block";
+ }
+</script>
+
+<script>
+function getwords() {
+  text = words.value;
+  document.getElementById("para").innerHTML += '<p>'+text
+  document.getElementById("words").value = "enter"
 }
 </script>
 
-<input type="button" value="Back" onclick="goBack()">
-<input type="button" value="Forward" onclick="goForward()">
-	
-<h3>Other Page Links</h3>
+<form name="changeform">
+    <input type="text" name="newtitle" size="40" />
+    <button type="button" onclick="changeTitle();">Change!</button>
+    </form>
+
+<h4>Other Page Links</h4>
 <p><a href="dryskin.html">Dry Skin Information</a></p>
 <p><a href="oilyskin.html">Oily Skin Information</a></p>
 <p><a href="best products.html">Best Products</a></p>
