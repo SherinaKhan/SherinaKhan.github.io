@@ -31,6 +31,25 @@
 		$(this).addClass('active')
 	});
 </script>
+<div id="B">
+   <button type="B" name="left"
+     onclick="pos(-1,0);">Left</button>
+   <button type="B" name="right"
+     onclick="pos(1,0);">Right</button>
+   <button type="B" name="up"
+     onclick="pos(0,-1);">Up</button>
+   <button type="B" name="down"
+     onclick="pos(0,1);">Down</button>
+   <button type="B" name="hide"
+     onclick="hideSquare();">Hide</button>
+   <button type="B" name="show"
+     onclick="showSquare();">Display</button>
+   </div>
+   <hr>
+   <div id="square">
+You can move this box around using the buttons below.
+</div>
+
 <div id="main">
 <h1 id="heading1">Learning About Makeup</h1>
 <p><img src="http://thecircular.org/wp-content/uploads/2013/04/Mac-cosmetics-into-the-groove.jpg" alt="Makeup1" width="895" height="465pa" /></p>
@@ -176,31 +195,15 @@ Makeup is something that has been gaining popularity in today's world. Today I w
 <img src="https://res.cloudinary.com/teepublic/image/private/s--BMGom9kT--/t_Preview/b_rgb:ef4a81,c_limit,f_jpg,h_630,q_90,w_630/v1479429243/production/designs/830495_1.jpg" alt="Smile" style="float:right;width:600:px;height:100px;"> 
 <b>I hope these tips were helpful and some of your questions were answered. Feel free to browse the site to see some of the best products in a range of prices that are designed for you!</b></p>
 
+
+
 <div class="textOverImage"
 style="background-image:url(https://www.lorealparisusa.com/~/media/images/lop/home/beauty-library/articles/mermaid-inspired-makeup-ideas-for-summer-2017/loreal-paris-bmag-article-3-mermaid-inspired-makeup-looks-to-try-this-summer-t.jpg?thn=0)"
 data-text="Colorful Makeup">
 </div>
 
-<div class="expand">Makeup is Fun!</div>	
-	
-<div id="B">
-   <button type="B" name="left"
-     onclick="pos(-1,0);">Left</button>
-   <button type="B" name="right"
-     onclick="pos(1,0);">Right</button>
-   <button type="B" name="up"
-     onclick="pos(0,-1);">Up</button>
-   <button type="B" name="down"
-     onclick="pos(0,1);">Down</button>
-   <button type="B" name="hide"
-     onclick="hideSquare();">Hide</button>
-   <button type="B" name="show"
-     onclick="showSquare();">Display</button>
-   </div>
-   <hr>
-   <div id="square">
-You can move this box around using the buttons below.
-</div>
+<div class="expand">Makeup is Fun!</div>
+
 
 <h5>Comment Section</h5>
 <form>
@@ -251,6 +254,7 @@ function getwords() {
 <p><a href="best products.html">Best Products</a></p>
 <p><a href="recommendedtools.html">Recommended Tools</a></p>
 </div>
+
 </body>
 
 </html>
