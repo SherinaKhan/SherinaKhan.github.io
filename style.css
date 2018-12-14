@@ -22,7 +22,7 @@ text-align: center;
 }
 #main {
 width: 1000px;
-height: 10370x;
+height: 1200x;
 background: #00cadb;margin: 25px auto;
 border: dotted 2px #ff00ff;
 padding: 5px;
@@ -198,5 +198,3 @@ div {
     font-weight:bold;
     font-size:1.5em;
   }
-
-
