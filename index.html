@@ -31,6 +31,8 @@
 		$(this).addClass('active')
 	});
 </script>
+
+<h5>Comment Section</h5>
 <div id="B">
    <button type="B" name="left"
      onclick="pos(-1,0);">Left</button>
@@ -47,8 +49,13 @@
    </div>
    <hr>
    <div id="square">
-You can move this box around using the buttons to the right.
+<form>
+<textarea id="words" rows="10" cols="20">Enter comment</textarea>
+<input type="button" onclick="getwords()" value="Enter" /> <br>
+<p id="para"></p>
+</form>
 </div>
+
 
 <div id="main">
 <h1 id="heading1">Learning About Makeup</h1>
@@ -205,13 +212,6 @@ data-text="Colorful Makeup">
 <div class="expand">Makeup is Fun!</div>
 
 
-<h5>Comment Section</h5>
-<form>
-<textarea id="words" rows="10" cols="20">Enter comment</textarea>
-<input type="button" onclick="getwords()" value="Enter" /> <br>
-<p id="para"></p>
-</form>
-
 <script>
 var x=1000, y=1000;
 function pos(dx,dy) {
@@ -247,6 +247,7 @@ function getwords() {
     <button type="button" onclick="changeTitle();">Change!</button>
     </form>
 
+	
 
 <h4>Other Page Links</h4>
 <p><a href="dryskin.html">Dry Skin Information</a></p>
