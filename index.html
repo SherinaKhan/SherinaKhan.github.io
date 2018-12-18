@@ -43,7 +43,7 @@
    <button type="B" name="down"
      onclick="pos(0,1);">Down</button>
    <button type="B" name="hide"
-     onclick="hideSquare();">Delete</button>
+     onclick="hideSquare();">Hide</button>
    <button type="B" name="show"
      onclick="showSquare();">Display</button>
    </div>
@@ -203,9 +203,10 @@ Makeup is something that has been gaining popularity in today's world. Today I w
 <b>I hope these tips were helpful and some of your questions were answered. Feel free to browse the site to see some of the best products in a range of prices that are designed for you!</b></p>
 
 <div class="expand">Makeup is Fun!</div>
-	
+
+
 <script>
-document.getElementById("expand").onmouseover = function() {mouseOver()};
+document.getElementById("exapand").onmouseover = function() {mouseOver()};
 document.getElementById("expand").onmouseout = function() {mouseOut()};
 
 function mouseOver() {
@@ -216,7 +217,9 @@ function mouseOut() {
     document.getElementById("expand")Makeup is Fun;
 }
 </script>
-	
+
+
+
 <div class="textOverImage"
 style="background-image:url(https://www.lorealparisusa.com/~/media/images/lop/home/beauty-library/articles/mermaid-inspired-makeup-ideas-for-summer-2017/loreal-paris-bmag-article-3-mermaid-inspired-makeup-looks-to-try-this-summer-t.jpg?thn=0)"
 data-text="Colorful Makeup"
@@ -257,17 +260,26 @@ function getwords() {
 
 <form name="changeform">
     <input type="text" name="newtitle" size="40" />
-    <button type="button" onclick="changeTitle();">Change!</button>
+    <button type="button" onclick="changeTitle();">Title Change!</button>
     </form>
 
-	
+<p id="qq">Should you moisturize your skin even if it is oily?</p>
+    <button id="btn" type="button">Click to see if your're right</button>
 
+    <script>
+        document.getElementById('btn').onclick = function() {
+            document.getElementById('qq').innerHTML = 'Yes you should! Moisturizing oily skin can help combat your oilyness';
+        }
+    </script>
+
+	
 <h4>Other Page Links</h4>
 <p><a href="dryskin.html">Dry Skin Information</a></p>
 <p><a href="oilyskin.html">Oily Skin Information</a></p>
 <p><a href="best products.html">Best Products</a></p>
 <p><a href="recommendedtools.html">Recommended Tools</a></p>
 </div>
+
 
 <script>
 function goBack() {
@@ -278,9 +290,9 @@ function goForward() {
 }
 </script>
 
+
 <input type="button" value="Back" onclick="goBack()">
 <input type="button" value="Forward" onclick="goForward()">
-
 </body>
 
 </html>
